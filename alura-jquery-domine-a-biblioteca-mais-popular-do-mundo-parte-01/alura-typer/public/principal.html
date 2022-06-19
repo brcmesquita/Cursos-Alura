@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Alura Typer</title>
+    <link rel="stylesheet" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" href="css/libs/google-fonts.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <div class="container center">
+
+        <!-- Seja bem vindo ao curso de jQuery :) -->
+        <h1 class="">Alura Typer</h1>
+        
+        <p class="frase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident adipisci tempore expedita, dolores facilis eaque inventore illo magnam. Assumenda, delectus. Laborum dolorum similique quae adipisci sint inventore dolorem quod cupiditate?</p>
+        
+        <ul class="">
+            <li>
+                <i class="small material-icons">description</i>
+                Você tem <span id="qtd-palavras">0</span> palavras para digitar
+            </li>
+            <li>
+                <i class="small material-icons">query_builder</i>
+                Você tem <span id="tempo-restante">3</span> segundos para digitar
+            </li>
+        </ul>
+        
+        <textarea id="campo-digitacao" cols="40" rows="8"></textarea>
+        
+        <a class="btn-floating btn-large waves-effect waves-light red left" id="reiniciar-jogo">
+            <i class="material-icons">restore</i>Reinicia Jogo
+        </a>
+         
+        <ul class="">
+            <li><span id="contador-caracteres">0</span> caracteres digitados</li>
+            <li><span id="contador-palavras">0</span> palavras digitados</li>
+        </ul>
+
+        <section class="placar">
+            <h3 class="center">Placar</h3>
+            <table class="bordered">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Nº de Palavras</th>
+                        <th>Remover</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Raphael</td>
+                        <td>20</td>
+                        <td>
+                            <a href="#" class="btn-remover">
+                                <i class="small material-icons">
+                                    delete
+                                </i>
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+        
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize-min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/placar.js"></script>
+</body>
+</html>
